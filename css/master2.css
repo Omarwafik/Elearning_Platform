@@ -1,0 +1,331 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background:linear-gradient(to right , rgb(81, 105, 51), rgb(56, 153, 127) ) ;
+    scroll-behavior: smooth;
+}
+header{
+    background:linear-gradient(to right , rgb(81, 105, 51), rgb(56, 153, 127) ) ;
+    z-index: 100;
+}
+header a{
+    position: relative;
+    text-decoration: none;  
+    color: white;
+    transition: all 0.5s 10ms;
+}
+
+#home {
+    scroll-margin-top: 100px; 
+}
+
+#about {
+    scroll-margin-top: 100px; 
+}
+
+
+.text{
+    font-weight: 600;
+}
+
+header .nav-item a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.5s 10ms;
+}
+
+header .nav-item a:hover::after {
+    width: 100%;
+    transform: scale(1.1);
+    transition: all 0.5s 10ms;
+}
+
+.bigText{
+    font-size: 80px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    letter-spacing: 12px;
+}
+
+.trust{
+    font-size: 18px;
+    word-spacing: 10px;
+    letter-spacing: 7px;
+}
+
+header{
+    height: 13vh;
+}
+
+main{
+    height: 100vh;
+}
+
+main span{
+    background: linear-gradient(to right ,rgb(152, 20, 135) ,rgb(25, 75, 96) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon{
+    color: rgb(6, 69, 48);
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 50px;
+    margin: 0 auto;
+    gap: 100px;
+    align-items: stretch;
+    margin:80px  0 100px 0;  
+}
+
+
+.course-card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 25px;
+    font-family: 'Poppins', sans-serif;
+    border-radius:10px ;
+    border: solid 2px black;
+    color: rgb(119, 5, 110);
+    text-align: center;
+    height: 100%;
+    max-width: 400px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.7);
+    transition: all 0.5s 10ms;
+}
+
+.course-card:hover{
+    transform: translateY(-7px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    transition: all 0.5s 10ms;
+
+}
+
+.course-card h4{
+    margin-bottom: 20px;
+    background-color: orange;
+    padding: 10px;
+}
+
+.course-card p{
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.course-card img{
+    width: 100%;             
+    height: 175px;        
+    object-fit: cover;       
+    border-radius: 5px;      
+    margin-bottom: 15px;     
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    border: 3px solid #ddd;  
+
+}
+
+.course-card .price{
+    text-align: center;
+    padding: 10px 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.bottom p{
+    margin: 0;
+}
+
+.no-results{
+    grid-column: 1/4;
+}
+
+.info h1 {
+    box-shadow: inset 0px 0px 30px 5px rgba(0, 0, 0, 1);
+    font-size: 40px;
+    font-family: "Bungee Spice", sans-serif;
+}
+
+.info p{
+    font-size: 17px;
+    line-height: 50px;
+    letter-spacing: 1px;    
+}
+
+.subscriptions img{
+    width: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;       
+    margin-bottom: 15px;     
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    border: 3px solid #ddd;  
+}
+
+.subscriptions{
+    margin-bottom: 150px;
+}
+
+.subscriptions .box{
+    /* width: 33%; */
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid white;
+    background-color: transparent;
+    box-shadow: 0 0px 12px 12px rgba(0,0,0,0.6); 
+    transition: all 0.5s 10ms;
+}
+
+.subscriptions .box:hover{
+    transform: scale(1.05); 
+    cursor: pointer;
+    transition: all 0.5s 10ms;
+    
+}
+
+.subscriptions .box p{
+    text-align: center;
+    margin-top: auto;
+}
+
+.subscriptions .box h3{
+    margin-bottom: 25px;
+    text-decoration: overline;
+}
+
+footer{
+    padding: 120px 80px;
+}
+
+.links i{
+    display: inline-flex;
+    width: 50px;
+    aspect-ratio: 1/1;
+    /* background-color: blue; */
+    border: 1px solid white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s 10ms;
+}
+
+.links i:hover{
+    box-shadow: inset 50px 0 0 0 orange;
+    border: 1px solid white;
+    transform: scale(1.2); 
+    cursor: pointer;
+    transition: all 0.5s 10ms;
+}
+
+.contacts li{
+    list-style: none;
+    line-height: 50px;
+    transition: all 0.5s 10ms;
+}
+
+.contacts li a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.contacts li:hover{
+    cursor: pointer;
+    opacity: .6;
+    transition: all 0.5s 10ms;
+}
+
+.upper i{
+    color: aquamarine;
+}
+
+hr{
+    margin: 0;
+    height: 5px;
+    background:linear-gradient(to right , rgb(124, 181, 54), rgb(39, 230, 179) ) ;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.social span{
+    color: orange;
+    font-size: 60px;
+}
+
+/* .special-nav{
+    position: relative;
+    transition: all 0.5s 10ms;
+
+} */
+
+/* .special{
+    position: absolute;
+    top: 27px;
+    display: none;
+    transition: all 0.5s 10ms;
+
+}
+
+.special-nav:hover .special{
+    display: block;
+    transition: all 0.5s 10ms;
+
+} */
+
+.user-name{
+    padding: 12px;
+    background-color: rgb(57, 74, 74);
+    border-radius: 10px;
+}
+
+
+
+.welcome-text span {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #0f3e4b, #92fe9d, #00c9ff);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s linear infinite ;
+    user-select: none;
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
