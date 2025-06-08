@@ -181,10 +181,7 @@ form{
        width: 180px !important;
        aspect-ratio: 1/1;
     }
-     .right .image{
-        width: 210px;
-        aspect-ratio: 1/1;
-    }
+ 
      .left h5{
         font-size: 13px;
     }
@@ -207,8 +204,8 @@ form{
         width: 50% ;
     }
     main{
-      height: 80%;
-      width: 150%;
+      height: 70%;
+      /* width: 150%; */
     }
 } 
 
@@ -247,19 +244,38 @@ form{
         margin: auto;
     }
 }
-@media (max-width:500pc){
-    /* main h1{
-        font-size: 25px !important;
-        padding: 0;
-    } */
+
+@media (max-width:500px){
+
     form{
-        /* padding: 10px !important; */
         margin: 20px;
     }
+ 
 }
+
 @media (max-width:375px){
     main h1{
         font-size: 25px !important;
+        padding: 10px 30px !important;
+    }
+    .content{
         padding: 0;
     }
+   .inputs label{
+    font-size: 12px !important;
+   }
+   form input{
+    font-size: 12px !important;
+    /* padding: 300px !important; */
+  }
+  .info p{
+    font-size: 11px !important;
+    padding: 10px !important;
+  }
+  .counts h5{
+    font-size: 13px !important;
+  }
+body{
+    padding: 0 50px !important;
+}
 }
