@@ -6,46 +6,46 @@
 }
 
 body{
-    height: 100vh;
+   height: 100vh;
     background: linear-gradient(to right ,rgb(152, 20, 135) ,rgb(25, 75, 96) );
-
+    padding: 0px 80px;
 }
 body.swal2-shown {
     overflow: hidden !important;
   }
   
 #pay{
-   
         transform: none !important;
         top: 0 !important;
-
 }
 
 main{
-    height: 90%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
     background-color: transparent;
     border: solid 2px white;
+    border-radius: 5px;
 }
 
-.left h1{
+content{
+
+}
+
+
+ h1{
     font-size: 60px;
     background:linear-gradient(to right , rgb(116, 222, 63), rgb(13, 186, 140) ) ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     width: 50%;
-    height: 100%;
-    padding: 35px;
-    
+    align-self: center;
 }
 
 .image{
-    width: 350px;
+    width: 300px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     margin-top: 0;
@@ -82,6 +82,12 @@ main{
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+main h1{
+    padding:10px 40px;
+}
+form{
+    margin-left: 40px;
+}
 
 .image:hover {
     cursor: pointer;
@@ -90,7 +96,7 @@ main{
 
 @keyframes photo {
     0% {
-        transform: translateY(30px);
+        transform: translateY(70px);
     }
     100% {
         transform: translateY(-50px); 
@@ -112,4 +118,148 @@ form{
     background-color: transparent;
     border: 2px solid white ;
     width: fit-content;
+}
+@media (max-width:1200px){
+    main h1{
+    font-size: 50px;
+    }
+    body{
+    padding: 0px 40px;
+    }
+
+    .left h5{
+    font-size: 17px;
+    }
+    .left h5 .counter{
+    font-size: 11px !important;
+    }
+    .right .image{
+    width: 260px;
+    aspect-ratio: 1/1;
+    }
+
+}
+
+
+@media (max-width:1025px){
+    main h1{
+        font-size: 45px !important;
+    }
+    .left p{
+        font-size: 14px !important;
+        margin-bottom: 15px !important;
+    }
+     .right .image{
+        width: 230px;
+        aspect-ratio: 1/1;
+    }
+    .left h5{
+        font-size: 15px !important;
+    }
+    .left h5 .counter{
+        font-size: 10px !important;
+    }
+    .right{
+        width: 50% !important;
+    }
+
+} 
+
+@media (max-width:900px){
+    form input{
+        font-size: 14px;
+    }
+    main h1{
+        font-size: 30px !important;
+    }
+    .left p{
+        font-size: 12px;
+        padding: 0 0 0 20px !important;
+        margin-bottom: 10px;
+    }
+    .right .image{
+       width: 180px !important;
+       aspect-ratio: 1/1;
+    }
+     .right .image{
+        width: 210px;
+        aspect-ratio: 1/1;
+    }
+     .left h5{
+        font-size: 13px;
+    }
+     .counter{
+        font-size:22px !important;
+        margin: 3px;
+    }
+    .counts{
+        margin-bottom: 2px !important;
+    }
+    .right{
+        width: fit-content;
+    }
+ 
+    .left{
+        padding-left: 0 !important;
+    }
+    input{
+        padding: 0 !important;
+        width: 50% ;
+    }
+    main{
+      height: 80%;
+      width: 150%;
+    }
+} 
+
+@media (max-width:700px){
+    
+    .right{
+        display: none;
+    }
+    main{
+      height: 75%;
+    }
+    main h1{
+      font-size: 27px !important;
+    padding:20px 30px 15px;
+    }
+    body{
+        padding: 0 50px;
+    }
+    .counts{
+        /* width: 100%; */
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom:20px !important ;
+    }
+    .info p{
+        margin-bottom: 15px !important;
+    }
+    form input{
+        font-size: 12px;
+    }
+    form button{
+        margin-top: 1px !important;
+        font-size: 12px !important;
+    }
+    form{
+        margin: auto;
+    }
+}
+@media (max-width:500pc){
+    /* main h1{
+        font-size: 25px !important;
+        padding: 0;
+    } */
+    form{
+        /* padding: 10px !important; */
+        margin: 20px;
+    }
+}
+@media (max-width:375px){
+    main h1{
+        font-size: 25px !important;
+        padding: 0;
+    }
 }
