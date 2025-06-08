@@ -8,10 +8,17 @@
 body{
     background:linear-gradient(to right , rgb(81, 105, 51), rgb(56, 153, 127) ) ;
     scroll-behavior: smooth;
+     /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden; */
 }
 header{
     background:linear-gradient(to right , rgb(81, 105, 51), rgb(56, 153, 127) ) ;
     z-index: 100;
+    width: 100%;
 }
 header a{
     position: relative;
@@ -67,7 +74,7 @@ header{
 }
 
 main{
-    height: 100vh;
+    max-height: 100vh;
 }
 
 main span{
@@ -151,7 +158,8 @@ section{
 }
 
 .no-results{
-    grid-column: 1/4;
+    grid-column: 2/5;
+    width: 100%;
 }
 
 .info h1 {
@@ -181,7 +189,6 @@ section{
 }
 
 .subscriptions .box{
-    /* width: 33%; */
     padding: 20px;
     color: white;
     display: flex;
@@ -207,7 +214,8 @@ section{
 
 .subscriptions .box h3{
     margin-bottom: 25px;
-    text-decoration: overline;
+    text-align: center;
+    /* text-decoration: overline; */
 }
 
 footer{
@@ -233,6 +241,7 @@ footer{
     cursor: pointer;
     transition: all 0.5s 10ms;
 }
+
 
 .contacts li{
     list-style: none;
@@ -268,25 +277,6 @@ hr{
     font-size: 60px;
 }
 
-/* .special-nav{
-    position: relative;
-    transition: all 0.5s 10ms;
-
-} */
-
-/* .special{
-    position: absolute;
-    top: 27px;
-    display: none;
-    transition: all 0.5s 10ms;
-
-}
-
-.special-nav:hover .special{
-    display: block;
-    transition: all 0.5s 10ms;
-
-} */
 
 .user-name{
     padding: 12px;
@@ -307,11 +297,12 @@ hr{
     -webkit-text-fill-color: transparent;
     animation: gradientMove 3s linear infinite ;
     user-select: none;
-  }
-  
-  @keyframes gradientMove {
+}
+
+
+@keyframes gradientMove {
     0% {
-      background-position: 0% center;
+        background-position: 0% center;
     }
     100% {
       background-position: 200% center;
@@ -327,5 +318,271 @@ hr{
       opacity: 1;
       transform: translateY(0);
     }
-  }
-  
+}
+
+
+@media (max-width: 992px) {
+    header{
+        justify-content: space-between ;
+    }
+    .navbar-collapse {
+        position: absolute !important;
+        /* padding: 0 40px; */
+        top: 105%;
+        left: -70%; 
+        width: 250%; 
+        z-index: 1000;
+        background: #222;
+        border-radius: 8px; 
+    }
+
+    .navbar-nav {
+        padding: 30px 20px !important;
+    }
+}
+
+
+
+@media (max-width: 1150px) {
+    .bigText{
+        font-size: 70px;
+    }
+    .user-name h3{
+        
+        font-size: 25px ;
+    }
+    .user-name span{
+        
+        font-size: 25px ;
+    }
+    
+    .course-card .bottom {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .course-card .bottom .price{
+        width: 80%;
+        font-size: smaller;
+    }
+    .course-card .bottom button{
+        width: 80%;
+        font-size: smaller;
+    }
+}
+
+
+@media (max-width: 992px) {
+     section{
+        grid-template-columns: repeat(2,1fr);
+     }  
+    main .bigText{
+        font-size: 55px !important;
+    }
+    main .user-name h3{
+        
+        font-size: 20px ;
+    }
+    main .user-name span{
+        
+        font-size: 20px ;
+    }
+    main .text-center{
+        font-size: 14px;
+    }
+    
+    .feature{
+        font-size: 27px;
+    }
+    .form-floating{
+        font-size: 13px;
+
+    }
+    .form-control{
+        font-size: 13px;
+    }
+    .info h1{
+        font-size: 25px;
+    }
+    .info h4{
+        font-size: 17px;
+    }
+    .info P{
+        font-size: 14px;
+    }
+    .subscriptions {
+        width: 100% !important;
+    }
+}
+
+
+@media (max-width: 800px) {
+    
+    .subscriptions {
+        flex-direction: column;
+    }
+    main .bigText{
+        font-size: 45px !important;
+    }
+    main .user-name h3{
+        font-size: 17px ;
+    }
+    main .user-name span{
+        
+        font-size: 17px ;
+    }
+    main .text-center{
+        font-size: 12px;
+    }
+    
+    .feature{
+        font-size: 23px;
+    }
+    .form-floating{
+        font-size: 11px;
+
+    }
+    .form-control{
+        font-size: 11px;
+    }
+    .info h1{
+        font-size: 22px;
+    }
+    .info h4{
+        font-size: 15px;
+    }
+    .info P{
+        font-size: 12px;
+    }
+    footer .contacts a{
+        font-size: 13px ;
+    }
+
+    footer .upper{
+        font-size: 18px !important;
+    }
+
+    footer .con{
+        font-size: 22px !important;
+    }
+    footer .con span{
+        font-size: 40px !important;
+    }
+    .copy{
+        font-size: 14px !important;
+    }
+     .navbar-collapse{
+        font-size: small;
+    }
+}
+
+
+
+@media (max-width: 650px){
+    section{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;       
+    }  
+    .course-card h4{
+        font-size: medium ;
+    }
+    .course-card p{
+        font-size: small ;
+    }
+    .course-card h4{
+        font-size: medium ;
+    }
+    .navbar-collapse{
+        font-size: small;
+    }
+    footer{
+        flex-direction: column;
+       padding: 40px;
+     
+    }
+    footer .social{
+        align-items: center;
+        width: 100%;
+    }
+   footer .contacts{
+    width: 100%;
+    /* text-align: center; */
+    justify-content: center;
+}
+
+
+footer .contacts a{
+    font-size: 13px ;
+}
+
+footer .upper{
+    font-size: 15px !important;
+}
+
+footer .con{
+    font-size: 18px !important;
+}
+footer .con span{
+    font-size: 30px !important;
+}
+footer .links{
+    font-size: 16px !important;
+}
+
+.copy{
+    font-size: 14px !important;
+}
+}
+
+
+@media (max-width: 550px) { 
+    header{
+        justify-content: space-between !important;
+        padding: 100px !important;
+        }
+    .logo{
+        font-size: 22px !important;
+    }
+    main .bigText{
+        font-size: 25px !important;
+    }
+    .user-name h3{
+        
+        font-size: 14px !important ;
+    }
+    .user-name span{
+        font-size: 15px !important ;
+    }
+    main p{
+        font-size: 11px !important;
+        text-align: center;
+    }
+
+    main .trust{
+        font-size: 14px !important;
+        word-spacing: 1px !important;
+        /* text-align: center; */
+    }
+    main a{
+        font-size: 14px !important;
+    }
+    
+    .course-card  {
+        width: 100%;
+    }
+    .course-card p {
+        font-size: 12px;
+    }
+    .course-card .bottom .price{
+        font-size: 12px;
+    }
+    .course-card .bottom button{
+        font-size: 12px;
+    } 
+    .copy{
+        font-size: 11px !important;
+    }
+    footer .contacts a{
+        
+        font-size: 10px !important;
+       }
+}
