@@ -6,6 +6,7 @@
 
 .cont{
     background: linear-gradient(to top, #5f78a2, #beaf5b);
+    
     height: 90%;
     width: 85%;
 }
@@ -44,3 +45,88 @@ p{
 .sign{
     width: 100%;
 }
+
+
+@media (max-width: 992px) { 
+   .left span{
+        padding:10px 15px !important;
+   }
+   .sign{
+    font-size: small !important;
+   }
+}
+
+@media (max-width: 576px) { 
+  
+
+    body{
+        padding: 30px;
+    }
+    .left .top{
+        /* width: 100% ; */
+        font-size: 17px !important;
+    }
+    .left span{
+        font-size: medium !important;
+        padding: 13px !important;
+    }
+    .links{
+        /* display: flex; */
+        width: 100% !important;
+        justify-content: center;
+
+    }
+    .links i,
+    .links button{
+      
+        font-size: 11px !important;
+    }
+  
+}
+
+@media (max-width: 767px) {
+      .right{
+        display: none;
+    }
+    .cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: smaller;
+    }
+    .left{
+        width: 100%;
+        display: block;
+        height: 100%;
+    }
+    .sign a{
+        font-size: smaller;
+    }
+    .form-floating{
+        
+        font-size: smaller;
+    }
+    .custom-btn{
+        width: 100%;
+        font-size: medium;
+        
+    }
+    .left .top{
+        text-align: center;
+    }
+ }
+
+
+
+@media (max-width: 420px) {
+    .cont{
+        height: 100%;
+    }
+    .sign{
+        font-size: 9px !important;
+    }
+      .links{
+      padding: 5px !important;
+      width: 100%;
+    }
+ }
