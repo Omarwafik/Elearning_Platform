@@ -1,155 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/master2.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Italianno&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bungee+Spice&family=Italianno&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/master2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Italianno&family=Special+Gothic+Condensed+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bungee+Spice&family=Italianno&family=Special+Gothic+Condensed+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="..."
+      crossorigin="anonymous"
+    ></script>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>E-learning Platform</title>
-</head>
-<body class="page-content">
-    <header class=" d-flex px-5 py-4 justify-content-around text-light position-sticky top-0" >
-        <div class="logo fs-2 "><i class="icon  fa-solid fa-book p-2 "></i>Coursaty</div>
-        <nav class="d-flex gap-5 align-items-center ">
+  </head>
+  <body class="page-content">
+    <header
+      class="d-flex px-md-5 py-4 px-3 justify-content-lg-around align-items-center text-light position-sticky top-0"
+    >
+      <div class="d-flex gap-2 logo fs-2">
+        <i class="icon fa-solid fa-book p-2"></i>Coursaty
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav d-flex gap-5 align-items-center">
             <div class="nav-item"><a href="#home">Home</a></div>
             <div class="nav-item special-nav">
-                <a href="#">Courses <i class="fa-solid fa-chevron-down "></i></a>
-                <!-- <div class="special  bg-danger">
-                    <div class="available-courses">
-                            <ul>
-                                <li>AI</li>
-                                <li>Back</li>
-                                <li>Front</li>
-                            </ul>
-                    </div>
-                </div> -->
+              <a href="#courses-cont"
+                >Courses <i class="fa-solid fa-chevron-down"></i
+              ></a>
             </div>
             <div class="nav-item"><a href="#contact">Contact</a></div>
             <div class="nav-item"><a href="#about">About</a></div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main class="container p-3 d-flex flex-column justify-content-start align-items-center text-capitalize text-light mb-5  position-relative" id="home">
-    
-        <div class="text px-4 py-1 bg-black  rounded-2 bg-transparent border">learning platform</div>
-        <div class="user-name mt-4" id="name" >
-           
-        </div>
-        <div class="bigText text-center p-2">
-            grow now with <br> <span class="text-warning">digital skills</span>
-        </div>
-        <p class="text-center">we are so happily to help you find & explore your self ... 
-            <br> Discover yourself and learn freely with our 100% online learning platform . </p>
-            <div class="p-4">
-                <a href="#courses-cont" class="btn btn-outline-light">Explore Courses</a>
-                        </div>
-            <p class="trust  p-4"> trusted by 500,000 people.</p>
-    </main>
-   
-    <h1 class="p-5 text-center text-light">Our Featured Courses</h1>
-   
-    <div class=" form-floating mb-5  m-auto w-50">
-        <input type="text" class="form-control" id="search-input" placeholder="" oninput="search()">
-        <label for="search-input" name="name">Search For Courses</label>
-    </div>   
-    <section class=" p-5 " id="courses-cont">
-    </section>
 
-   <div class="info p-5 mb-4 d-flex flex-column justify-content-center align-items-center  text-light text-capitalize " id="about">
-            <h1 class="p-4 ">easy to <span>use</span></h1>
-            <h4 class="p-4 text-center">Our platform is designed with simplicity and ease-of-use at its core.
-                <br>
-             Whether you're a beginner or a seasoned learner, you'll find everything you need just a few clicks away</h4>
-             <p class=" text-left">
-                <br>
-             🔍 Instant Search: Quickly find the courses you’re looking for with a smart, responsive search feature.
-                <br>
-             🧩 User-Friendly Interface: Clean design and intuitive navigation make browsing and booking courses a breeze.
-             <br>
-             📱 Mobile Ready: Access your learning journey from any device, anytime.
-             <br>
-             ⚡ Fast Loading & Smooth Scrolling: Enjoy seamless experience with content that loads as you scroll — no waiting, no hassle.
-             <br>
-             🎯 Focused Content: Everything you need, nothing you don’t. The platform is distraction-free and focused on helping you learn.
-             </p>
-             
-   </div>
-   <div class="subscriptions container p-5  d-flex justify-content-between align-items-center gap-5  w-75">
-    <div class="box ">
-        <img src="img/solo.avif" alt="">
-        <h3>Solo Road Map</h3   >
-        <p>Includes everything from the Self Learning plan, plus weekly live sessions, community support.</p>
+    <main
+      class="container p-3 d-flex flex-column justify-content-start align-items-center text-capitalize text-light mb-1 position-relative"
+      id="home"
+    >
+      <div class="text px-4 py-1 bg-black rounded-2 bg-transparent border">
+        learning platform
+      </div>
+      <div class="user-name mt-4" id="name"></div>
+      <div class="bigText text-center p-2">
+        grow now with <br />
+        <span class="text-warning">digital skills</span>
+      </div>
+      <p class="text-center">
+        we are so happily to help you find & explore your self ... <br />
+        Discover yourself and learn freely with our 100% online learning
+        platform .
+      </p>
+      <div class="p-4">
+        <a href="#courses-cont" class="btn btn-outline-light"
+          >Explore Courses</a
+        >
+      </div>
+      <p class="trust p-4">trusted by 500,000 people.</p>
+    </main>
+
+    <h1 class="feature p-5 text-center text-light">Our Featured Courses</h1>
+
+    <div class="form-floating mb-5 m-auto w-50">
+      <input
+        type="text"
+        class="form-control"
+        id="search-input"
+        placeholder=""
+        oninput="search()"
+      />
+      <label for="search-input" name="name">Search For Courses</label>
     </div>
-    <div class="box">
-        <img src="img/diamond.avif" alt="">
+    <section class="p-5" id="courses-cont"></section>
+
+    <div
+      class="info p-5 mb-4 d-flex flex-column justify-content-center align-items-center text-light text-capitalize"
+      id="about"
+    >
+      <h1 class="p-4">easy to <span>use</span></h1>
+      <h4 class="p-4 text-center">
+        Our platform is designed with simplicity and ease-of-use at its core.
+        <br />
+        Whether you're a beginner or a seasoned learner, you'll find everything
+        you need just a few clicks away
+      </h4>
+      <p class="text-left">
+        <br />
+        🔍 Instant Search: Quickly find the courses you’re looking for with a
+        smart, responsive search feature.
+        <br />
+        🧩 User-Friendly Interface: Clean design and intuitive navigation make
+        browsing and booking courses a breeze.
+        <br />
+        📱 Mobile Ready: Access your learning journey from any device, anytime.
+        <br />
+        ⚡ Fast Loading & Smooth Scrolling: Enjoy seamless experience with
+        content that loads as you scroll — no waiting, no hassle.
+        <br />
+        🎯 Focused Content: Everything you need, nothing you don’t. The platform
+        is distraction-free and focused on helping you learn.
+      </p>
+    </div>
+    <div
+      class="subscriptions container p-5 d-flex justify-content-between align-items-center gap-5 w-75"
+    >
+      <div class="box">
+        <img src="img/solo.avif" alt="" />
+        <h3>Solo Road Map</h3>
+        <p>
+          Includes everything from the Self Learning plan, plus weekly live
+          sessions, community support.
+        </p>
+      </div>
+      <div class="box">
+        <img src="img/diamond.avif" alt="" />
         <h3>Diamond Membership</h3>
-        <p>Get all Solo Road benefits, along with one-on-one coaching, exclusive content, certificates, and job referrals.
+        <p>
+          Get all Solo Road benefits, along with one-on-one coaching, exclusive
+          content, certificates, and job referrals.
         </p>
-    </div>
-    <div class="box">
-        <img src="img/box.avif" alt="">
+      </div>
+      <div class="box">
+        <img src="img/box.avif" alt="" />
         <h3>Self Learning</h3>
-        <p>Access all pre-recorded courses and  learn at your own pace with flexible resources and quizzes.
+        <p>
+          Access all pre-recorded courses and learn at your own pace with
+          flexible resources and quizzes.
         </p>
+      </div>
     </div>
-   </div>
-   <footer class=" bg-dark d-flex justify-content-around align-items-start text-light" id="contact">
-       <div class="social d-flex flex-column gap-4">
-            <div class="upper  fs-5 m-auto "><i class="fa-solid fa-link p-2 "></i>Linkage</div>
-            <div class="links d-flex gap-4 fs-5 m-auto">
-                <i class="fa-brands fa-facebook-f "></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-tiktok"></i>
-                <i class="fa-brands fa-linkedin-in "></i>
-               
-            </div>
-            <p class=" p-4 fs-1">Don't hesitate to <br><span>Contact</span> Us!</p>
+
+    <footer
+      class="bg-dark d-flex justify-content-around align-items-start text-light"
+      id="contact"
+    >
+      <div class="social d-flex flex-column gap-4">
+        <div class="upper fs-5 m-auto">
+          <i class="fa-solid fa-link p-2"></i>Linkage
         </div>
-        <div class="contacts">
-            <ul>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
+        <div class="links d-flex gap-4 fs-5 m-auto">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
         </div>
-        <div class="contacts">
-            <ul>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Knowledge base</a></li>
-                <li><a href="#">Live chat</a></li>
-            </ul>
-        </div>
-        <div class="contacts">
-            <ul>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Our team</a></li>
-                <li><a href="#">Leadership</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-        </div>
+        <p class="con p-4 fs-1">
+          Don't hesitate to <br /><span>Contact</span> Us!
+        </p>
+      </div>
+
+      <div class="contacts d-flex gap-4">
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Knowledge base</a></li>
+          <li><a href="#">Live chat</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Our team</a></li>
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
     </footer>
-    <div class="copy bg-dark text-light ">
-        <hr class="container">
-     <div class="d-flex justify-content-around py-3">
-        <p>Copyright 2025 © Coursaty. All Rights Reserved</p>
-        <p>Terms & Conditions &nbsp;&nbsp;&nbsp;&nbsp;
-            Privacy Policy</p>
-     </div>
+    <div class="copy bg-dark text-light">
+      <hr class="container" />
+      <div class="d-flex justify-content-around py-3">
+        <p>
+          Copyright 2025 © Coursaty. <br />
+          All Rights Reserved
+        </p>
+        <p>
+          Terms & Conditions <br />
+          Privacy Policy
+        </p>
+      </div>
     </div>
 
     <script src="db.js"></script>
     <script src="JS/style2.js"></script>
-
-</body>
+  </body>
 </html>
