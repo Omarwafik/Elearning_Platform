@@ -40,7 +40,7 @@ payment.innerHTML += `
           <input type="text" class="p-1 rounded-2 " placeholder="MM/YY" >
           <input type="text" class="p-1 rounded-2" placeholder="CVV" >
         </div>
-        <button type="button" class="btn btn-outline-warning w-25 mt-3" id="pay">Pay <button>
+        <button type="button" class="btn btn-outline-warning w-25 mt-3" id="pay">Pay </button>
       </form>
     </div>
     <div class="right ">
